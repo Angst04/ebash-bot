@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Пакеты
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+
+# Виртуальные окружения
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Логи
+*.log
+
+# Конфигурационные файлы
+*.ini
+*.cfg
+*.json
+*.yaml
+*.yml
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Другие временные файлы
+*.DS_Store
+Thumbs.db
+
+# .env  
+.env
