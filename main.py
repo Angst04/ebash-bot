@@ -1,5 +1,5 @@
 import asyncio
-import winloop
+# import winloop
 
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message, WebAppInfo
@@ -11,7 +11,7 @@ from aiogram.types import InlineKeyboardButton
 import os
 from dotenv import load_dotenv
 
-winloop.install()
+# winloop.install()
 load_dotenv()
 
 TOKEN = os.getenv('TOKEN')
