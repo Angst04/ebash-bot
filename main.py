@@ -43,7 +43,7 @@ async def cmd_post(message: Message):
    if message.from_user.id in ADMINS:
       builder = InlineKeyboardBuilder()
       builder.row(InlineKeyboardButton(
-         text='EBASH', 
+         text='EBASH Mini App', 
          url="https://t.me/ebash_helper_bot/ebashhelper"
       ))
       
