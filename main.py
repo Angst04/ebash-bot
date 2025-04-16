@@ -41,22 +41,16 @@ async def cmd_start(message: Message):
 @dp.message(StateFilter(None), Command("post"))
 async def cmd_post(message: Message):
    if message.from_user.id in ADMINS:
-      bot_username = (await bot.me()).username
       builder = InlineKeyboardBuilder()
       builder.row(InlineKeyboardButton(
          text='EBASH', 
-         url=f"https://t.me/{bot_username}?start=start"
+         url="https://t.me/ebash_helper_bot/ebashhelper"
       ))
       
-      sent_message = await bot.send_message(
+      await bot.send_message(
          text='Добро пожаловать в бота-помощника канала EBASH!', 
          reply_markup=builder.as_markup(), 
          chat_id=CHAT_ID
-      )
-      
-      await bot.pin_chat_message(
-         chat_id=CHAT_ID,
-         message_id=sent_message.message_id
       )
       
       await message.answer(text='Пост опубликован и закреплен')
